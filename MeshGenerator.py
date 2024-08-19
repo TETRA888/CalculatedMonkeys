@@ -10,11 +10,20 @@ import random
 # Easier mesh manipulation and selection
 import bmesh
 
-# Import Blender-Python Functionatliy
-import bpy
-
+"""
+ ________      ___    ___      ________  ________  ________  ________          _____ ______          
+|\   __  \    |\  \  /  /|    |\   __  \|\   ____\|\   __  \|\   ___ \        |\   _ \  _   \        
+\ \  \|\ /_   \ \  \/  / /    \ \  \|\  \ \  \___|\ \  \|\  \ \  \_|\ \       \ \  \\\__\ \  \       
+ \ \   __  \   \ \    / /      \ \   __  \ \_____  \ \   __  \ \  \ \\ \       \ \  \\|__| \  \      
+  \ \  \|\  \   \/  /  /        \ \  \ \  \|____|\  \ \  \ \  \ \  \_\\ \       \ \  \    \ \  \ ___ 
+   \ \_______\__/  / /           \ \__\ \__\____\_\  \ \__\ \__\ \_______\       \ \__\    \ \__\\__\
+    \|_______|\___/ /             \|__|\|__|\_________\|__|\|__|\|_______|        \|__|     \|__\|__|
+             \|___|/                       \|_________|                                              
+                                                                                                                                                                                                                                                                                                                                                  
+"""                                                                                                                
 
 def create_vr_headset_base():
+    """"""
     bpy.ops.mesh.primitive_cube_add(enter_editmode = True, location=(0, 0, 0), scale=(1, 0.25, 0.5))
 
     bpy.ops.mesh.bevel(offset=0.1, offset_pct=0, segments=2, affect='EDGES')
@@ -135,4 +144,5 @@ def main():
         monkey.data.materials.append(material)
     assign_colors(monkey, CLOD)
     create_vr_headset()
+    
 main()
