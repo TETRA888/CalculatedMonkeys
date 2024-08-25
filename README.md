@@ -1,4 +1,4 @@
-# This is a simple script that randomly assigns colors to the faces of Suzzane the monkey from Blender
+# This is a simple script that randomly assigns colors to the faces of "Suzzane" the monkey from Blender
 ## The way it works is quite simple, here are the steps:
 ### 1. We initially, generate the monkey mesh using primitive Blender-Python operations
 ### 2. Next, we select the individual mesh and iterate through the faces using a library called BMesh, this essentially provides easier mesh handling
