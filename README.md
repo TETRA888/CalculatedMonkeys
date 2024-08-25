@@ -12,5 +12,13 @@
 ![trig2_2](https://github.com/user-attachments/assets/a0d3fe68-8b7a-4156-9b19-0bc6bc4cdb2c)
 ### 2. Additionally, you can tweak a few parameters such as the radius and the number of steps or "jumps" on the unit circle
 ### 3. to calculate these steps its pretty simple you just use the formula: angle_increment = 𝜏/steps which essentially just means you divide a 360 degree circle into n steps 
-and increment the angle based on the angle_increment.
+### and increment the angle based on the angle_increment
+### 4. Finally, once the x and y coordinates are calculated, you simple position the monkey in that position.
+
+## However, you also need to make sure that the monkey faces away from the center otherwise your generated mesh would just look like this:
+![image](https://github.com/user-attachments/assets/6ae70226-b119-48b9-84de-040456d2b77a)
+### 1. To correct for this, I found that you can assign the Z-axis rotation of the monkey mesh to the (current angle + π/2), after doing so you get this:
+![image](https://github.com/user-attachments/assets/fe0becde-1a84-4119-8bcc-1e49d53aaef9)
+
+
 
