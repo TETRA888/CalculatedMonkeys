@@ -6,7 +6,7 @@
 
 ## Now as for the VR headset, well...
 ### 1. The same primitive mesh generation principles are used to create an overall mesh that looks like a VR headset
-### 3. I created the VR headset manually and then automated it via the Blender-Python scripting. I found this process a lot more efficient when it comes to automating mesh generation.
+### 2. I created the VR headset manually and then automated it via the Blender-Python scripting. I found this process a lot more efficient when it comes to automating mesh generation.
 
 ## To position the monkeys, its pretty simple highschool math
 ### 1. you calculate the x and y coordinates using sines and cosines
@@ -16,7 +16,7 @@
 ### and increment the angle based on the angle_increment
 ### 4. For example: you have a circle that is 2*π === 𝜏 === 360 degrees, you then want to divide that 360 circle into steps. So lets say we went 6 monkeys, you would divide 360/6 which equals 60 for the angle_increment
 ###    So our angles would be: 0, 60, 120, 180, 240, 300, 360.
-### 4. Finally, once the x and y coordinates are calculated, you simple position the monkey in that position.
+### 5. Finally, once the x and y coordinates are calculated, you simple position the monkey in that position.
 
 ## However, you also need to make sure that the monkey faces away from the center otherwise your generated mesh would just look like this:
 ![image](https://github.com/user-attachments/assets/6ae70226-b119-48b9-84de-040456d2b77a)
