@@ -23,5 +23,6 @@
 ### 1. To correct for this, I found that you can assign the Z-axis rotation of the monkey mesh to the (current angle + π/2), after doing so you get this:
 ![image](https://github.com/user-attachments/assets/fe0becde-1a84-4119-8bcc-1e49d53aaef9)
 
+## Finally for my website I assigned the faces of Susan with random color values and then converted the entire mesh object into a .gltf file which could be easily utilized by sophicated programs such as OpenUSD or 3D libraries such as ThreeJS
 
 
